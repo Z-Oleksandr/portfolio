@@ -1,0 +1,183 @@
+body {
+    background-color: #90959e;
+    display: flex;
+    justify-content: center;
+}
+
+.returnButton {
+    position: fixed;
+    left: 5px;
+    bottom: 5px;
+    z-index: 1;
+}
+
+#returnHome {
+    width: 85px;
+    height: 30px;
+    background-color: #4837ab;
+}
+
+.returnHomeText {
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+:root {
+    --notBarShow: none;
+    --notBarColor: #a6550f;
+    --firstNot: inline;
+    --secondNot: none;
+    --cancerIs: none;
+}
+
+.centered {
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.righted {
+    float: right;
+    margin: 100px;
+    display: flex;
+    z-index: 5px;
+}
+
+.ctrl {
+    float: left;
+}
+
+.divControls {
+    padding: 25px;
+}
+
+.mainScreen {
+    background-color: #3e3f42;
+    width: 350px;
+    height: 570px;
+    border: 8px solid white;
+    border-radius: 40px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.atTop {
+    position: absolute;
+    border-top-left-radius: 31px;
+    border-top-right-radius: 31px;
+    width: 100%;
+    height: 88px;
+    background-color: var(--notBarColor);
+    display: var(--notBarShow);
+}
+
+.atBott {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    overflow: hidden;
+}
+
+.bottText {
+    float: left;
+    margin: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+.adjust1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notText {
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+#firstNot {
+    display: var(--firstNot);
+}
+
+#secondNot {
+    display: var(--secondNot);
+}
+
+.inCen {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.inCenText {
+    font-size: 30px;
+    color: white;
+}
+
+.numSmo {
+    font-size: 35px;
+    color: aquamarine;
+}
+
+.controls {
+    padding: 15px 25px;
+    width: 190px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #111873;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.controls:hover {
+    background-color: #172099;
+}
+
+.controls:active {
+    transition-duration: 200ms;
+    background-color: #0f1461;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.gerat {
+    float: right;
+    margin-left: 300px;
+}
+
+.theDevice {
+    width: 135px;
+    height: 400px;
+    background-color: #000e75;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.flap {
+    width: 100px;
+    height: 380px;
+    background-color: #948941;
+    z-index: -5;
+}
+
+#cancer {
+    width: 300px;
+    height: 300px;
+    display: var(--cancerIs);
+}
+
+#cancerText {
+    font-size: 35px;
+    color: red;
+    text-align: center;
+}

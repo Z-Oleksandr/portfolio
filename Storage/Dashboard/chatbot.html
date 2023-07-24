@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <title>ChatBot</title>
+    </head>
+    <body>
+        <nav>
+            <a href="#" class="navItems">Home</a>
+            <a href="#" class="navItems">ChatBot</a>
+            <a href="#" class="navItems">Placeholder</a>
+        </nav>
+        <div id="chatbot">
+            <div id="chatbot-header">
+                <h1>This is a Chat, but not Bot yet</h1>
+            </div>
+            <div id="chatbot-body">
+                <div id="chatbot-messages"></div>
+                <form id="chatbot-form">
+                    <input
+                        type="text"
+                        id="chatbot-input"
+                        placeholder="Type your message here..."
+                    />
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+        <div class="returnButton">
+            <button id="returnHome">
+                <a href="../../index.html" class="returnHomeText">Return</a>
+            </button>
+        </div>
+        <script src="chatbot.js"></script>
+    </body>
+</html>

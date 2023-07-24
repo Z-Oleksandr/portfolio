@@ -1,0 +1,105 @@
+body {
+    background-image: linear-gradient(to bottom, #4837ab 69%, white);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.topBar {
+    width: 99.7%;
+    height: 6.9vh;
+    background-color: #d1690f;
+    border-radius: 6.9px;
+    border: 5px solid white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.welcome {
+    color: white;
+    margin-left: 20px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.social {
+    position: absolute;
+    margin-top: 4px;
+    right: 20px;
+}
+
+.socialIcons {
+    width: 5vh;
+    height: 5vh;
+    padding: 10px;
+}
+
+.socialIcons:hover {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.main {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileP {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profileH1 {
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.profileH2 {
+    color: #ada8a3;
+    font-family: "Times New Roman", Times, serif;
+}
+
+table.workstable td,
+table.workstable th {
+    display: table-cell;
+    border: 5px solid white;
+    border-radius: 10px;
+    width: 500px;
+    height: 340px;
+    overflow: hidden;
+}
+
+table.workstable {
+    border-collapse: separate;
+    border-spacing: 10px;
+    padding: 0px;
+}
+
+.workstable {
+    margin: 0 auto;
+}
+
+.workspreview img {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    display: block;
+}

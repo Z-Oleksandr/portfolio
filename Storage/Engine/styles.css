@@ -1,0 +1,298 @@
+body {
+    background-image: url("instrumentPanel.webp");
+    overflow: hidden;
+}
+
+.returnButton {
+    position: fixed;
+    left: 5px;
+    bottom: 5px;
+    z-index: 1;
+}
+
+#returnHome {
+    width: 85px;
+    height: 30px;
+    background-color: #4837ab;
+}
+
+.returnHomeText {
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+:root {
+    --lightOn: black;
+}
+
+.speedo {
+    position: relative;
+    top: 400px;
+    left: 20%;
+    width: 450px;
+    height: 450px;
+    /* border: 4px solid black;
+    border-radius: 50%; */
+}
+
+.speedo .see {
+    height: 50%;
+    width: 100%;
+    margin-left: -5px;
+    border-bottom: 5px solid black;
+    background-image: url("scale1.png");
+    background-repeat: no-repeat;
+    background-size: 145% 176%;
+    background-position: center -46px;
+    border-top-right-radius: 250px;
+    border-top-left-radius: 250px;
+    border: 4px solid black;
+}
+
+.seecover {
+    --display: 0;
+    position: relative;
+    bottom: 46px;
+    left: 303px;
+    border-top-right-radius: 225px;
+    border-top-left-radius: 225px;
+    width: 450px;
+    height: 225px;
+    background-color: #b33e04;
+    -webkit-mask-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        from(rgba(179, 62, 4, calc(var(--display)))),
+        to(rgba(0, 0, 0, 0))
+    );
+}
+
+.speedo .nosee {
+    height: 50%;
+    width: 100%;
+    background-image: url("instrumentPanel.webp");
+    opacity: 0;
+}
+
+.speedo .hand {
+    height: 45%;
+    width: 10px;
+    --rotation: -88;
+    --rotationAdjust: var(--rotation);
+    --lightColor: black;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    border: 1px solid white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: var(--lightColor);
+    z-index: 10;
+    transform: translate(-50%) rotate(calc(var(--rotationAdjust) * 1deg));
+    transform-origin: bottom;
+}
+
+.speedo::after {
+    content: "";
+    position: absolute;
+    background-color: grey;
+    z-index: 11;
+    width: 15px;
+    height: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.throttlediv {
+    position: absolute;
+    right: 200px;
+    top: 150px;
+    height: 500px;
+    width: 100px;
+}
+
+.throttlediv .way {
+    width: 75px;
+    height: 100%;
+    background-color: grey;
+    border-radius: 80px;
+    border: solid 5px white;
+}
+
+.throttlediv .throttle {
+    --gas: 85;
+    width: 300px;
+    height: 77px;
+    border-radius: 35px;
+    border: 1px solid white;
+    background-color: red;
+    z-index: 10;
+    position: absolute;
+    right: -89%;
+    top: calc((var(--gas) * 1vh) - 150px);
+    transform: translateY(-50%);
+    transition: all 0.7s;
+}
+
+.onLight {
+    background-color: #b5abcf;
+    width: 100px;
+    height: 50px;
+    border: 4px solid black;
+    border-radius: 14px;
+    text-align: center;
+    --color: #db1a1a;
+    position: absolute;
+    top: -30px;
+    left: 150px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Oswald", sans-serif;
+    color: var(--color);
+}
+
+.onLight .itself {
+    position: relative;
+    bottom: 58%;
+    user-select: none;
+}
+
+.contr {
+    width: 35px;
+    height: 35px;
+    background-color: #367d7b;
+    position: relative;
+    top: 19px;
+    left: 35px;
+    border-radius: 10px;
+    border: 2px solid #363d3d;
+}
+
+.see .number {
+    --rotation: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: rotate(var(--rotation)) scale(1.035);
+    font-size: 24px;
+    font-weight: 1000;
+    font-family: "Oswald", sans-serif;
+    color: var(--lightOn);
+}
+
+.see .number0 {
+    --rotation: -88deg;
+}
+.see .number1 {
+    --rotation: -72deg;
+}
+.see .number2 {
+    --rotation: -54deg;
+}
+.see .number3 {
+    --rotation: -36deg;
+}
+.see .number4 {
+    --rotation: -18deg;
+}
+.see .number5 {
+    --rotation: 0deg;
+}
+.see .number6 {
+    --rotation: 18deg;
+}
+.see .number7 {
+    --rotation: 36deg;
+}
+.see .number8 {
+    --rotation: 54deg;
+}
+.see .number9 {
+    --rotation: 73deg;
+}
+
+.start {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: #6a6b6e;
+    transform: translate(50%, 50%);
+    bottom: 600px;
+    left: 60%;
+    border-radius: 50%;
+    border: 5px solid #d4d9d9;
+    justify-content: center;
+    background-image: url("startstop2.png");
+    background-position: -44px center;
+    background-size: 160%;
+}
+
+.inButton {
+    --textOn: #9fa1a1;
+    position: relative;
+    color: var(--textOn);
+    text-align: center;
+    top: 2.4vh;
+    font-weight: 990;
+    user-select: none;
+}
+
+#b2 {
+    top: 0.2vh;
+}
+
+#b3 {
+    top: 0.1vh;
+}
+
+.middle {
+    text-align: center;
+    width: 150px;
+    height: 20px;
+    position: relative;
+    bottom: 85%;
+    left: 33%;
+    font-family: "Oswald", sans-serif;
+    font-weight: 1000;
+}
+
+.line2 {
+    font-family: "Pacifico", cursive;
+    font-weight: 200;
+}
+
+.lightsbutton {
+    --sizeButt: 90;
+    --posButt: 0;
+    position: relative;
+    bottom: calc(600px - (var(--posButt) * 1px));
+    left: calc(850px + (var(--posButt) * 1px));
+    width: calc(var(--sizeButt) * 1px);
+    height: calc(var(--sizeButt) * 1px);
+    border-radius: 50%;
+    background-color: #828282;
+    border: 3px solid white;
+}
+
+#b4 {
+    top: 2.5vh;
+    color: white;
+}
+
+.lIcon {
+    --sizeAdjust: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: calc((50px - (var(--sizeAdjust) * 1px)));
+    color: var(--lightOn);
+}

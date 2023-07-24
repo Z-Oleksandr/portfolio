@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <title>Prodigy</title>
+    </head>
+    <body>
+        <div class="returnButton">
+            <button id="returnHome">
+                <a href="../../index.html" class="returnHomeText">Return</a>
+            </button>
+        </div>
+        <div class="loginPage">
+            <div class="loginContent">
+                <div class="welcomeText">
+                    <p class="wText">Prodigy</p>
+                    <p class="wText2">Enter your password</p>
+                </div>
+                <div class="logIn">
+                    <input type="password" name="password" id="password" />
+                </div>
+            </div>
+        </div>
+        <div class="root">
+            <div class="topInfo">
+                <div class="welcomeMes">
+                    <p class="wMes">Welcome to prodigy, Oleksandr</p>
+                </div>
+                <div class="time"></div>
+            </div>
+            <div class="archive" data-simplebar>
+                <div class="arcContent"></div>
+            </div>
+            <div class="mainInput">
+                <textarea
+                    class="input1"
+                    name="Text1"
+                    cols="40"
+                    rows="5"
+                ></textarea>
+                <button type="submit" id="submit1">
+                    Submit to the Archive
+                </button>
+            </div>
+            <div class="clearStorage">
+                <img
+                    src="Media/icons8-delete-64.png"
+                    alt="Clear Local Storage"
+                    id="clearLC"
+                />
+            </div>
+        </div>
+        <script src="https://unpkg.com/simplebar@5.3.0/dist/simplebar.min.js"></script>
+    </body>
+    <script src="loginScript.js"></script>
+    <script src="script.js"></script>
+</html>

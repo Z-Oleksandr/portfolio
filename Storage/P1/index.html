@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+        <title>P1</title>
+    </head>
+    <body>
+        <div class="returnButton">
+            <button id="returnHome">
+                <a href="../../index.html" class="returnHomeText">Return</a>
+            </button>
+        </div>
+        <div class="main">
+            <div id="sumOut"></div>
+            <div class="warning">Only numbers allowed</div>
+            <div class="input">
+                <p class="gText">Your name</p>
+                <input type="text" class="mainInput" id="username" />
+                <p class="gText">Your email</p>
+                <input type="text" class="mainInput" id="email" />
+                <p class="gText">Access code</p>
+                <input type="text" class="mainInput" id="aCode" />
+                <button type="submit" id="submitMainInput">Log in</button>
+            </div>
+            <div class="inputResult">
+                <div class="items">
+                    <input type="text" id="addItem" />
+                    <button type="submit" id="addItemB">Add</button>
+                </div>
+                <div class="mainTableDiv">
+                    <table class="mainTable">
+                        <!-- <tr>
+                            <td class="table1">
+                                <input
+                                    type="checkbox"
+                                    name="r1"
+                                    id="r1"
+                                    class="check"
+                                />
+                            </td>
+                            <td class="table2" id="rr1"></td>
+                        </tr>
+                        <tr>
+                            <td class="table1">
+                                <input
+                                    type="checkbox"
+                                    name="r2"
+                                    id="r2"
+                                    class="check"
+                                />
+                            </td>
+                            <td class="table2" id="rr2"></td>
+                        </tr> -->
+                    </table>
+                </div>
+                <div class="mtButtons">
+                    <button class="mtb" id="sum">Sum</button>
+                    <button class="mtb" id="del">Delete</button>
+                </div>
+            </div>
+        </div>
+        <div class="second">
+            <div class="button">
+                <button id="B1">Click here!</button>
+            </div>
+            <div class="userData">
+                <table class="userDataTable">
+                    <tr>
+                        <td id="udt1"></td>
+                    </tr>
+                    <tr>
+                        <td id="udt2"></td>
+                    </tr>
+                </table>
+                <button id="logOut">Log out</button>
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>

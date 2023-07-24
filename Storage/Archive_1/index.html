@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <title>Archive 1</title>
+    </head>
+    <body>
+        <div class="all">
+            <div class="returnButton">
+                <button id="returnHome">
+                    <a href="../../index.html" class="returnHomeText">Return</a>
+                </button>
+            </div>
+            <div class="top">
+                <div class="topCon">
+                    <h2 class="welcome">You are in the Archive 1</h2>
+                    <button id="clearAll">Clear all added items</button>
+                </div>
+            </div>
+            <div class="break"></div>
+            <div class="main">
+                <div class="mainCon">
+                    <ol id="list0">
+                        <li class="li0">
+                            <div class="linked">
+                                <p class="t10">Komplexe Zahlen &nbsp;</p>
+                                <a href="#"><p class="t10">[1],</p></a>
+                                <p>&nbsp;</p>
+                                <a href="#"><p class="t10">[15]</p></a>
+                            </div>
+                        </li>
+                        <li class="li0">
+                            <div class="linked">
+                                <p class="t10">LGS + Matrix &nbsp;</p>
+                                <a href="#"><p class="t10">[2],</p></a>
+                                <p>&nbsp;</p>
+                                <a href="#"><p class="t10">[3],</p></a>
+                                <p>&nbsp;</p>
+                                <a href="#"><p class="t10">[9],</p></a>
+                                <p>&nbsp;</p>
+                                <a href="#"><p class="t10">[10],</p></a>
+                                <p>&nbsp;</p>
+                                <a href="#"><p class="t10">[11],</p></a>
+                                <p>&nbsp;</p>
+                                <a href="#"><p class="t10">[14]</p></a>
+                            </div>
+                        </li>
+                        <li class="li0">
+                            <div class="linked">
+                                <p class="t10">Vektorraum &nbsp;</p>
+                                <a href="#"><p class="t10">[4],</p></a>
+                                <p>&nbsp;</p>
+                                <a href="#"><p class="t10">[5]</p></a>
+                            </div>
+                            <div class="addOn">
+                                <ul>
+                                    <li>
+                                        <p class="t20">UnterVR</p>
+                                    </li>
+                                    <li>
+                                        <p class="t20">
+                                            Spannraum, linearkombinationen
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+                <div class="interAll">
+                    <div class="interCard one" id="card1">
+                        <p class="t10 interText">
+                            To add a new item to the list press &nbsp;ADD
+                        </p>
+                        <button id="inter1" class="bSize1">ADD</button>
+                    </div>
+                    <div class="interCard two hidden" id="card2">
+                        <form action="#" id="form2" class="interCard forms">
+                            <label for="listItem"
+                                >Enter the new list item</label
+                            >
+                            <input
+                                type="text"
+                                id="listItem"
+                                name="listItem"
+                                autocomplete="off"
+                            /><br />
+                            <button type="submit" id="inter2" class="bSize2">
+                                Submit
+                            </button>
+                        </form>
+                    </div>
+                    <div class="interCard three hidden" id="card3">
+                        <form action="#" id="form3" class="interCard forms">
+                            <label for="chapters"
+                                >Enter the chapters one by one. (0 to /q)</label
+                            >
+                            <input
+                                type="number"
+                                id="chapter"
+                                name="chapter"
+                                min="0"
+                                max="420"
+                                autocomplete="off"
+                            /><br />
+                            <button type="submit" id="inter3" class="bSize2">
+                                Submit
+                            </button>
+                        </form>
+                    </div>
+                    <div class="interCard four hidden" id="card4">
+                        <form action="#" id="form4" class="interCard forms">
+                            <label for="chapterLink"
+                                >Enter path to chapter</label
+                            >
+                            <input
+                                type="text"
+                                id="chapterLink"
+                                name="chapterLink"
+                                autocomplete="off"
+                            /><br />
+                            <button type="submit" id="inter4" class="bSize2">
+                                Submit
+                            </button>
+                        </form>
+                    </div>
+                    <div class="interCard five hidden" id="card5">
+                        <form action="#" id="form5" class="interCard forms">
+                            <label for="subListItem"
+                                >Enter the sublist items, if any</label
+                            >
+                            <input
+                                type="text"
+                                id="subListItem"
+                                name="subListItem"
+                                autocomplete="off"
+                            /><br />
+                            <button type="submit" id="inter5" class="bSize2">
+                                Submit
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>

@@ -1,0 +1,229 @@
+body {
+    background-color: #000080;
+    overflow: hidden;
+}
+
+.returnButton {
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    z-index: 1;
+}
+
+#returnHome {
+    width: 85px;
+    height: 30px;
+    background-color: #4837ab;
+}
+
+.returnHomeText {
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#B1 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    font-size: 20px;
+    left: 5px;
+    bottom: 5px;
+}
+
+#B1:active {
+    animation-name: myAnim;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes myAnim {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0.85);
+    }
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+.gText {
+    color: white;
+}
+
+.mainInput {
+    width: 400px;
+    height: 40px;
+    font-size: 20px;
+    background-color: #347deb;
+    border: 5px double white;
+    color: white;
+}
+
+.inputResult {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: auto;
+    bottom: auto;
+}
+
+#submitMainInput {
+    width: 100px;
+    height: 30px;
+    margin: 10px;
+    background-color: #000080;
+    border: 5px double white;
+    color: white;
+}
+
+.mainTable {
+    color: white;
+    border: 2px solid white;
+    width: 400px;
+    min-height: 200px;
+    height: auto;
+}
+
+.mainTableDiv {
+    max-height: 750px;
+}
+
+.table1 {
+    border: 2px solid white;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+}
+
+.table2 {
+    border: 2px solid white;
+    width: 300px;
+    height: 80px;
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+.check {
+    width: 40px;
+    height: 40px;
+}
+
+.userData {
+    position: absolute;
+    right: 5px;
+    top: 12px;
+    display: none;
+    width: 400px;
+}
+
+.userDataTable {
+    width: 400px;
+    height: 100px;
+    border: 2px solid white;
+}
+
+#udt1,
+#udt2 {
+    width: auto;
+    height: auto;
+    border: 2px solid white;
+    color: white;
+    text-align: center;
+}
+
+#logOut {
+    margin-top: 10px;
+    position: absolute;
+    right: 10px;
+    width: 80px;
+    height: 40px;
+    background-color: #000080;
+    border: 5px double white;
+    color: white;
+}
+
+.items {
+    margin: 20px;
+}
+
+#addItem {
+    width: 150px;
+    height: 80px;
+    font-size: 50px;
+    background-color: #347deb;
+    border: 5px double white;
+    color: white;
+}
+
+#addItemB {
+    width: 80px;
+    height: 30px;
+    background-color: #000080;
+    border: 5px double white;
+    color: white;
+}
+
+.mtButtons {
+    position: absolute;
+    left: 5px;
+    bottom: -40px;
+}
+
+.mtb {
+    width: 80px;
+    height: 30px;
+    background-color: #000080;
+    border: 5px double white;
+    color: white;
+}
+
+#sum:hover {
+    background-color: #3b8246;
+}
+
+#del:hover {
+    background-color: #a60013;
+}
+
+#sumOut {
+    display: none;
+    background-color: #347deb;
+    width: auto;
+    min-width: 200px;
+    height: 80px;
+    border: 5px double white;
+    position: fixed;
+    right: 100px;
+    color: white;
+    font-size: 65px;
+}
+
+.warning {
+    background-color: #a62434;
+    width: 150px;
+    height: 80px;
+    border: 5px double white;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    position: fixed;
+    right: 150px;
+    top: 450px;
+    display: none;
+}

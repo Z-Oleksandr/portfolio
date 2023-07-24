@@ -1,0 +1,165 @@
+body {
+    background-image: url("background.JPG");
+    background-size: cover;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.returnButton {
+    position: fixed;
+    left: 5px;
+    bottom: 5px;
+    z-index: 1;
+}
+
+#returnHome {
+    width: 85px;
+    height: 30px;
+    background-color: #4837ab;
+}
+
+.returnHomeText {
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#startButton {
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5 px rgba(0, 0, 0, 0.26);
+    transition: all 0.3s ease-in-out;
+}
+
+#startButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.26);
+}
+
+.player {
+    text-align: center;
+    width: 40%;
+}
+
+.opponent {
+    text-align: center;
+    width: 40%;
+}
+
+.hand {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 110px;
+}
+
+.hand.fewCards {
+    justify-content: center;
+}
+
+.hand.more {
+    justify-content: flex-start;
+}
+
+.card {
+    width: 85px;
+    height: 120px;
+    background-color: white;
+    border: 1px solid black;
+    margin: 20px;
+}
+
+#player1Hand img,
+#player2Hand img {
+    width: 75px;
+    height: 100%;
+    object-fit: cover;
+    padding: 20px;
+}
+
+#player1Hand {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+#player2Hand {
+    position: absolute;
+    top: 0;
+    right: 10%;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px;
+}
+
+#playedCards {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+}
+
+#playedCards img {
+    width: 75px;
+    height: 108px;
+    object-fit: cover;
+}
+
+.back {
+    background-image: url("Cards/shirt.png");
+    background-size: cover;
+}
+
+#deck {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+}
+
+#deck img {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.played-cards-container {
+    text-align: center;
+    width: 100px;
+}
+
+.played-cards {
+    width: 80px;
+    height: 117px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+}

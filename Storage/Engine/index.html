@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Pacifico&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap"
+            rel="stylesheet"
+        />
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script>
+        <link rel="stylesheet" href="styles.css" />
+        <script type="module" src="script.js"></script>
+        <title>Engine</title>
+    </head>
+    <body>
+        <div class="all">
+            <div class="returnButton">
+                <button id="returnHome">
+                    <a href="../../index.html" class="returnHomeText">Return</a>
+                </button>
+            </div>
+            <div class="speedo">
+                <div class="see" id="num">
+                    <div class="number number0">0</div>
+                    <div class="number number1">1</div>
+                    <div class="number number2">2</div>
+                    <div class="number number3">3</div>
+                    <div class="number number4">4</div>
+                    <div class="number number5">5</div>
+                    <div class="number number6">6</div>
+                    <div class="number number7">7</div>
+                    <div class="number number8">8</div>
+                    <div class="number number9">9</div>
+                </div>
+                <div class="nosee"></div>
+                <div class="hand" id="handId"></div>
+                <div class="middle">
+                    <p class="line1">RPM x1000</p>
+                    <p class="line2">New Line Engines</p>
+                </div>
+            </div>
+            <div class="seecover" id="backLight"></div>
+            <div class="throttlediv">
+                <div class="throttle" id="thrott">
+                    <div class="contr" id="contrl"></div>
+                </div>
+                <div class="way"></div>
+                <div class="onLight" id="onLight">
+                    <p class="itself">Control</p>
+                </div>
+            </div>
+            <div class="start" id="startstop">
+                <p class="inButton" id="b1">START</p>
+                <p class="inButton off" id="b2">STOP</p>
+                <p class="inButton" id="b3">ENGINE</p>
+            </div>
+            <div class="lights">
+                <div class="lightsbutton" id="lightsbutton">
+                    <ion-icon
+                        name="sunny-outline"
+                        class="lIcon"
+                        id="iconSize"
+                    ></ion-icon>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

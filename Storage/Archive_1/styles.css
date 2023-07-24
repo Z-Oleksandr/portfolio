@@ -1,0 +1,167 @@
+.returnButton {
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    z-index: 1;
+}
+
+#returnHome {
+    width: 85px;
+    height: 30px;
+    background-color: #4837ab;
+}
+
+.returnHomeText {
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.all {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top {
+    display: flex;
+    width: 98%;
+    height: 15%;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.topCon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.break {
+    height: 3px;
+    width: 100%;
+    border-top: 3px solid black;
+    margin-top: 1vh;
+}
+
+.main {
+    display: flex;
+    width: 92%;
+    height: auto;
+    min-height: 500px;
+    border-left: 2px solid black;
+    margin-top: 2vh;
+}
+
+/* Input form */
+
+.interAll {
+    position: absolute;
+    right: 3%;
+    margin-top: 5px;
+    width: 20vw;
+    height: 20vh;
+    min-height: 100px;
+    min-width: 200px;
+    border: 2px solid black;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+#chapter {
+    width: 30px;
+}
+
+/* The button */
+
+.bSize1 {
+    background-color: #555555;
+    color: white;
+    padding: 12px 27px;
+    text-align: center;
+}
+
+.bSize2 {
+    background-color: #555555;
+    color: white;
+    padding: 7px 20px;
+}
+
+#clearAll {
+    background-color: #555555;
+    color: white;
+    padding: 12px 27px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+/* -- */
+
+.interCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.forms {
+    position: relative;
+    top: 3vh;
+}
+
+/* display */
+
+.hidden {
+    display: none;
+}
+
+/* -- */
+
+.interText {
+    text-align: center;
+}
+
+/* List styling */
+
+ul {
+    list-style: disc;
+}
+
+li {
+    font-size: 17px;
+}
+
+.linked {
+    display: flex;
+    flex-direction: row;
+    margin-top: -2px;
+}
+
+.addOn {
+    margin-top: -9px;
+}
+
+/* Content styling */
+
+.welcome {
+    margin-left: 10px;
+}
+
+.li0 {
+    font-family: "Times New Roman", Times, serif;
+}
+
+.t10 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 17px;
+}
+
+.t20 {
+    font-size: 16px;
+}

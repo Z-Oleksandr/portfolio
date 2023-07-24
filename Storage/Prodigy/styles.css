@@ -1,0 +1,216 @@
+body {
+    background-color: #113b16;
+}
+
+.returnButton {
+    position: fixed;
+    left: 5px;
+    bottom: 5px;
+    z-index: 1;
+}
+
+#returnHome {
+    width: 85px;
+    height: 30px;
+    background-color: #4837ab;
+}
+
+.returnHomeText {
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.root {
+    display: none;
+}
+
+.topInfo {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    border: 3px solid white;
+    width: 20vw;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+}
+
+.welcomeMes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 65%;
+    border: 2px solid white;
+}
+
+.wMes {
+    font-size: 2vh;
+    text-align: center;
+    color: white;
+}
+
+.time {
+    display: flex;
+    width: 100%;
+    height: 35%;
+    border: 2px solid white;
+    font-size: 2vh;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainInput {
+    position: absolute;
+    top: 51%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input1 {
+    width: 40vw;
+    height: 60vh;
+    font-size: 35px;
+    border: 10px double black;
+    box-shadow: 10px 5px 5px black;
+}
+
+#submit1 {
+    background-color: transparent;
+    width: 150px;
+    height: 60px;
+    border: 5px double white;
+    color: white;
+    margin: 10px;
+    box-shadow: 10px 5px 5px black;
+}
+
+#submit1:active {
+    animation-name: myAnim;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes myAnim {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0.9);
+    }
+}
+
+.archive {
+    height: 95vh;
+    width: 21vw;
+    position: absolute;
+    left: 1vw;
+    border: 5px double white;
+    overflow-y: scroll;
+}
+
+.arcContent {
+    width: 100%;
+    height: 100%;
+}
+.archiveItem {
+    width: 18vw;
+    min-height: 300px;
+    border: 3px solid white;
+    margin: 5px auto;
+    background-color: #b0aaa4;
+    border-radius: 8px;
+    font-size: 20px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    position: relative;
+}
+
+.archiveItem p {
+    padding: 5px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+.delIcon {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+    color: black;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+}
+
+.clearStorage {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.delArcIt {
+    opacity: 0.1;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 5px;
+    right: 0px;
+}
+
+.delArcIt:hover {
+    opacity: 1;
+}
+
+#clearLC {
+    width: 70px;
+    height: 70px;
+}
+
+#clearLC:hover {
+    width: 80px;
+    height: 80px;
+}
+
+/* LogIn Page */
+
+.loginPage {
+    display: flex;
+}
+
+.loginContent {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    border: 3px solid white;
+    width: 40vw;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcomeText {
+    text-align: center;
+}
+
+.wText {
+    font-size: 5vh;
+    color: white;
+}
+
+.wText2 {
+    font-size: 2vh;
+    color: #abb8ae;
+}
+
+#password {
+    width: 25vw;
+    height: 3vh;
+    font-size: 2vh;
+}
